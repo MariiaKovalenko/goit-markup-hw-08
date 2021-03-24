@@ -1,3 +1,9 @@
 @mixin transition($type) {
    transition: $type $time-duration $cubic-time;    
 }
+
+@mixin flexCenter($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}

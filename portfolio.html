@@ -12,14 +12,14 @@
 <body>
     <!-- Шапка -->
     <header class="page-header">
-      <div class="container header-nav">
+      <div class="container container--header">
     
         <nav class="header-nav">
           <a href="./index.html" class="logo"> <span class="logo__title">Web</span>Studio</a>
     
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link">Студия</a>
+              <a href="./index.html" class="header-nav__link ">Студия</a>
             </li>
             <li class="header-nav__item">
               <a href="./portfolio.html" class="header-nav__link header-nav__link--current">Портфолио</a>
@@ -47,7 +47,11 @@
             </a>
           </li>
         </ul>
-    
+        <button class="btn-menu js-open-menu" type="button">
+          <svg width="40" height="40" aria-expanded="false" aria-controls="mobile-menu">
+            <use class="menu-icon" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -76,7 +80,7 @@
       
           <ul class="portfolio">
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                    <div class="thumb__descr">
                           <img class="thumb__descr--img" src="./images/img11.jpg" alt="Ноутбук">
                       <div class="overlay__container">
@@ -91,7 +95,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                      <img class="thumb__descr thumb__descr--img" src="./images/img12.jpg" alt="Баскетболисты">
                      <div class="overlay__container">
@@ -106,7 +110,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                      <img class="thumb__descr--img" src="./images/img13.jpg" alt="Ресторан Seafood">
                      <div class="overlay__container">
@@ -121,7 +125,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                     <img class="thumb__descr--img" src="./images/img14.jpg" alt="Наушники">
                      <div class="overlay__container">
@@ -136,7 +140,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                      <img class="thumb__descr--img" src="./images/img15.jpg" alt="Две коробки">
                      <div class="overlay__container">
@@ -151,7 +155,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                      <img class="thumb__descr--img" src="./images/img16.jpg" alt="Монитор">
                      <div class="overlay__container">
@@ -166,7 +170,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                       <img class="thumb__descr--img" src="./images/img17.jpg" alt="Журнал">
                       <div class="overlay__container">
@@ -181,7 +185,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                       <img class="thumb__descr--img" src="./images/img18.jpg" alt="Бирка">
                       <div class="overlay__container">
@@ -196,7 +200,7 @@
                 </a>
               </li>
               <li class="portfolio__item">
-                <a href="">
+                <a href="" class="portfolio__link">
                   <div class="thumb__descr">
                      <img class="thumb__descr--img" src="./images/img19.jpg" alt="Экран ноутбука">
                      <div class="overlay__container">
@@ -266,13 +270,11 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> 
 
     <form class="footer-form">
       <h2 class="footer__title">Подпишитесь на рассылку</h2>
-      <label class="footer-form__label">
         <input class="footer-form__form-input" type="email" name="mail" placeholder="E-mail" />
-      </label>
       <button class="btn btn--subscribe" type="submit">
         Подписаться <svg class="icon--subscribe" width="24" height="24">
           <use href="./images/icons.svg#paper-plane" />
@@ -281,5 +283,73 @@
     </form>
   </div>
 </footer>
+
+<!-- Header mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="btn-menu js-close-menu" type="button">
+    <svg class="close-icon--mobile" width="40" height="40" fill="currentColor">
+      <use href="./images/icons.svg#close-menu"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-nav__list">
+    <li class="mobile-nav__item">
+      <a href="./index.html" class="mobile__link">Студия</a>
+    </li>
+
+    <li class="mobile-nav__item">
+      <a href="./portfolio.html" class="mobile__link current__mobile">Портфолио</a>
+    </li>
+
+    <li class="mobile-nav__item">
+      <a href="#footer" class="mobile__link">Контакты</a>
+    </li>
+  </ul>
+
+  <div class="links-wrapper">
+    <ul class="header-contacts--mobile">
+      <li class="header-contacts__item">
+        <a href="tel:+380961111111" class="link link--mobile tel">
+          +38 096 111 11 11
+        </a>
+      </li>
+
+      <li class="header-contacts__item">
+        <a href="mailto:info@devstudio.com" class="link link--mobile mail">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+
+    <ul class="mobile-social">
+      <li class="mobile-social__item mobile-social__item--line">
+        <a href="#" class="mobile-social__link">
+          Instagram
+        </a>
+      </li>
+
+      <li class="mobile-social__item mobile-social__item--line ">
+        <a href="#" class="mobile-social__link">
+          Twitter
+        </a>
+      </li>
+
+      <li class="mobile-social__item mobile-social__item--line">
+        <a href="#" class="mobile-social__link">
+          Facebook
+        </a>
+      </li>
+
+      <li class="mobile-social__item">
+        <a href="#" class="mobile-social__link">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>
