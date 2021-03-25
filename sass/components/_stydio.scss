@@ -2,10 +2,7 @@
 
 .hero {
   max-width: 1600px;
-  // min-height: 600px;
   min-height: 400px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   padding-top: 118px;
   padding-bottom: 118px;
 
@@ -36,7 +33,6 @@
 }
 
 .hero__title {
-  // width: 696px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
@@ -44,10 +40,8 @@
 
   color: $primary-white-color;
   font-weight: 900;
-  // font-size: 44px;
   font-size: 26px;
   line-height: 1.62;
-  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   @media screen and(min-width: 480px) {
@@ -69,7 +63,6 @@
 // Feature
 
 .feature {
-  // padding: 94px 0;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and(min-width: 1200px) {
@@ -78,7 +71,6 @@
 }
 
 .feature__list {
-  // display: flex;
    @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +80,6 @@
 }
 
 .feature__item {
-  // width: 270px;
   width: 100%;
    @media screen and(min-width: 768px) {
     max-width: 354px;
@@ -104,7 +95,6 @@
 }
 
 .feature__item:not(:last-child) {
-  // margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -112,7 +102,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // max-width: 270px;
   width: 100%;
   height: 120px;
   background-color: $bg-team-section;
@@ -197,7 +186,6 @@
 /* Team */
 
 .team {
-  // padding: 94px 0;
   background-color: $bg-team-section;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -208,14 +196,11 @@
 
 .team__heading {
   margin-top: 0;
-  // margin-bottom: 50px;
   margin-bottom: 30px;
   color: $title-text-color;
   font-weight: 700;
-  // font-size: 36px;
   font-size: 28px;
   line-height: 1.17;
-  // line-height: 1.2;
   text-align: center;
   @media screen and(min-width: 1200px) {
     margin-bottom: 50px;
@@ -225,11 +210,6 @@
 }
 
 .team__list {
-  // display: flex;
-  // padding: 0;
-  // margin: 0;
-  // list-style: none;
-  // margin-left: calc (-1 * $card-set);
    @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -239,8 +219,6 @@
 }
 
 .team__item {
-  // margin-left: $card-set;
-  // flex-basis: calc(100% / 3 - $card-set);
   background-color: $primary-white-color;
   box-shadow: $card-shadow;
   border-radius: 0px 0px 4px 4px;
@@ -334,7 +312,6 @@
 /* Постоянные клиенты */
 
 .client {
-    // padding: 94px 0;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and(min-width: 1200px) {
@@ -358,8 +335,6 @@
 }
 
 .client__list {
-  // display: flex;
-  // justify-content: space-between;
   @media screen and(min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
@@ -409,7 +384,6 @@
   border-color: $accent-color;
   }
 }
-
 
 .client__icon {
   fill: currentColor;
