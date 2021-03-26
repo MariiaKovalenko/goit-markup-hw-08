@@ -22,8 +22,7 @@
   top: 50%;
   left: 50%;
 
-  min-height: 581px;
-  min-width: 528px;
+  height: 609px;
   background-color: $primary-white-color;
   padding: 40px;
   box-shadow: $card-shadow;
@@ -32,6 +31,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: opacity $time-duration $cubic-time,
     transform $time-duration $cubic-time;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+}
+@media screen and (min-width: 1200px) {
+min-width: 528px;
+min-height: 581px;
+}
 }
 
 .btn-close {
@@ -76,9 +83,9 @@
   color: $title-text-color;
 }
 
-.modal-form__field{
-  margin-top: 10px;
-}
+// .modal-form__field{
+//   margin-top: 10px;
+// }
 
 .modal-form__field:first-child {
   margin-top: 12px;
@@ -171,12 +178,17 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
 
   letter-spacing: 0.03em;
   color: $primary-text-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  line-height: 1.71;
+  }
 }
 
 .check-icon {
