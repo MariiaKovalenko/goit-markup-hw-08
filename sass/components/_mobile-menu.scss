@@ -32,6 +32,11 @@
   color: $title-text-color;
 }
 
+.mobile__link:hover, 
+.mobile__link:focus {
+  color: $accent-color;
+}
+
 .current__mobile {
   color: $accent-color;
 }
