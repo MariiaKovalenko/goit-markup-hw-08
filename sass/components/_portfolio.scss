@@ -140,7 +140,7 @@ flex-direction: column;
   height: 100%;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: $bg-overlay;
   box-shadow: $overlay-shadow;
 
@@ -149,8 +149,11 @@ flex-direction: column;
   transition: transform $time-duration $cubic-time,
   opacity $time-duration $cubic-time;
 
-    @media screen and (max-width: 1199px) {
-    padding-top: 24px;
+    @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+    } 
+    @media screen and (min-width: 1200px) {
+     padding: 63px 24px;
     } 
   }
 
